@@ -46,8 +46,8 @@
     <button class="tool-items fa fa-repeat" onclick="document.execCommand('redo',false,'')"></button>
 
     <button class="tool-items fa fa-tint" onclick="changeColor()"></button>
-     <!-- <button class="tool-items fa fa-tint" onclick="backColor()">bg</button> -->
-     fontcplor:<input type="color" onchange="switchColor()" id="dontc"/>
+     <button class="tool-items fa fa-tint" onclick="backColor()">bg</button>
+     fontcolor:<input type="color" onchange="switchColor()" id="dontc"/>
 
     <button class="tool-items fa fa-strikethrough" onclick="document.execCommand('strikeThrough',false,'')"></button>
 
@@ -72,7 +72,7 @@
   </div>
 
   <div class="center">
-    <div class="editor" contenteditable id="editor">
+    <div class="editor"onmouseover="mouseStatus(true);" onmouseout="mouseStatus(false);" contenteditable id="editor">
       <h1>Simple Html editor</h1>
       <p>Good to start</p>
     </div>
@@ -94,6 +94,7 @@ print" onclick="printMe()">PrintHtml</button>
   </div>
 
 <script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="script2.js"></script>
 </body>
 
 

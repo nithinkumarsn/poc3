@@ -11,7 +11,7 @@ html{
 
 }
 
-.toolbar{
+/*.toolbar{
     display:grid;
     grid-template-columns: repeat(auto-fit,minmax(20px,40px));
     background-color: rgb(231, 231, 231);
@@ -20,12 +20,19 @@ html{
     padding: 1rem;
     justify-content: center;
     align-items:center;
+}*/
+.toolbar {
+  direction: inline-flex;
+  height: 50px;
+  width: 300px;
+  overflow-x:scroll;
+  position: relative;
+  
 }
-
 .tool-items{
     background-color: rgb(27, 26, 26);
-     padding-top: .6rem;
-     padding-bottom:.6rem;
+     padding: .6rem;
+     /*padding-bottom:.6rem;*/
     cursor: pointer;
     color: #ffff;
 }
@@ -41,6 +48,7 @@ html{
      display: flex;
      justify-content: center;
      flex-wrap: wrap;
+    
 }
 
 

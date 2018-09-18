@@ -38,6 +38,17 @@ function switchColor() {
  document.getElementById("editor").style.color = edit;
   // body...
 }
+function mouseOder(x){
+  var xxx= document.querySelector(".toolbar");
+  if(x){
+  xxx.style.display="show";
+}
+else{
+   xxx.style.display="none";
+}
+}
+ 
+
 function getImage() {
   var file = document.querySelector("input[type=file]").files[0];
 
